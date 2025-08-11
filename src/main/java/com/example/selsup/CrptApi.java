@@ -70,7 +70,7 @@ public class CrptApi {
         this.objectMapper = new ObjectMapper();
 
         // Планируем автоматическое восстановление разрешений
-        long periodMillis = timeUnit.toMillis(1);
+        long periodMillis = intervalUnit.toMillis(1);
         scheduler.scheduleAtFixedRate(this::refillPermits, periodMillis, periodMillis, TimeUnit.MILLISECONDS);
     }
 
