@@ -233,7 +233,6 @@ public class CrptApi {
     private static class CreateRequestBody {
         public String document_format;
         public String product_document;
-        public String product_group;
         public String signature;
         public String type;
     }
